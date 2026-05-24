@@ -1,0 +1,47 @@
+# Git ignore configuration
+
+# Dependency directories
+node_modules/
+**/node_modules/
+venv/
+**/venv/
+env/
+**/env/
+
+# Cache directories
+__pycache__/
+**/__pycache__/
+*.pyc
+**/*.pyc
+.pytest_cache/
+.eslintcache
+
+# Production builds
+dist/
+**/dist/
+build/
+**/build/
+
+# Local databases and logs
+*.db
+**/*.db
+*.log
+**/*.log
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+**/.env
+**/.env.*
+
+# OS and IDE files
+.DS_Store
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
