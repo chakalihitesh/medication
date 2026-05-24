@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+
+  --color-surface: #f8f9fb;
+  --color-surface-dim: #d9dadc;
+  --color-surface-bright: #f8f9fb;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f3f4f6;
+  --color-surface-container: #edeef0;
+  --color-surface-container-high: #e7e8ea;
+  --color-surface-container-highest: #e1e2e4;
+
+  --color-on-surface: #191c1e;
+  --color-on-surface-variant: #434654;
+  --color-outline: #737685;
+  --color-outline-variant: #c3c6d6;
+  
+  --color-primary: #003d9b;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #0052cc;
+  --color-on-primary-container: #c4d2ff;
+  
+  --color-secondary: #00687a;
+  --color-on-secondary: #ffffff;
+  --color-secondary-container: #6ae1ff;
+  --color-on-secondary-container: #006374;
+
+  --color-tertiary: #851800;
+  --color-error: #ba1a1a;
+  --color-on-error: #ffffff;
+  --color-error-container: #ffdad6;
+  --color-on-error-container: #93000a;
+
+  --color-sos-red: #DE350B;
+
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+  --radius-2xl: 2rem;
+}
+
+body {
+  background-color: var(--color-surface);
+  color: var(--color-on-surface);
+  font-family: var(--font-sans);
+  -webkit-tap-highlight-color: transparent;
+}
+
+.neomorphic-card {
+  background-color: var(--color-surface-container-lowest);
+  box-shadow: 0 4px 12px rgba(0, 82, 204, 0.05), inset 0 1px 0 rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(195, 198, 214, 0.3); /* subtle --color-outline-variant */
+}
+
+.sos-shadow {
+  box-shadow: 0 8px 24px rgba(222, 53, 11, 0.25);
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slide-up {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slide-up-fade {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
