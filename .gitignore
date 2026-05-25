@@ -48,3 +48,6 @@ build/
 *.ntvs*
 *.njsproj
 *.sln
+
+# Local debug files
+otp_debug.txt

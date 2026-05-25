@@ -11,7 +11,7 @@ try:
 except Exception as e:
     print(f"Warning: Could not initialize pygame mixer (no audio device?): {e}")
 
-alarm_file = "assets/alarm.wav"
+alarm_file = "assets/alarm.mpeg"
 
 def play_alarm():
     """Play the alarm sound in a loop."""
